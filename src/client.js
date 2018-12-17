@@ -1,2 +1,3 @@
-console.log("hello 2.0");
+let name = "hello 2.0";
+console.log(name);
 
