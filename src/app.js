@@ -10,12 +10,12 @@ export default class App extends React.Component{
 	              <p>with Bootstrap and SASS.</p>
 	              <p>
 			<Button className="btn-primary" 
-			  href="http://02geek.com/" target="_blank" />
-			<Button className="btn-secondary" />
-			<Button className="btn-danger-outline btn-sm" 
-			  href="http://02geek.com/" />
+			  href="http://02geek.com/" target="_blank" disabled />
+			<Button className="-secondary" disabled />
+			<Button className="-danger-outline -sm" 
+			  href="http://02geek.com/" disabled />
 			</p>
-			<Button className="btn-primary-outline btn-lg btn-block" />
+			<Button className="-primary-outline -lg -block" disabled />
 	            </div>
 	        </div>;
 	}	
