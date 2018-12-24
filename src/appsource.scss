@@ -1,0 +1,7 @@
+$image: url(/img/fall-1072821_1920.jpg);
+$text-color: yellow;
+
+.custom{
+    background-image:$image;
+    color:$text-color;
+}

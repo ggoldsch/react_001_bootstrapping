@@ -1,3 +1,5 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
 	entry:['babel-polyfill','./src/client.js'],
 	output:{
@@ -13,10 +15,20 @@ module.exports = {
 
 	module: {
 		rules:[
-			{test:/\.js/,
+			{test:/\.js$/,
 			 exclude:/node_modules/,
 			 loader:'babel-loader'
-			}
+			},
+            {test:/\.css$/,
+             loader:ExtractTextPlugin.extract(['css-loader'])
+            },
+            {test:/\.(sass|scss)$/,
+             loader:ExtractTextPlugin.extract(['css-loader','sass-loader'])
+            }
 		]
 	},
+    plugins:[
+        new ExtractTextPlugin("app.css")
+    ]
+
 };
