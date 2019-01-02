@@ -1,2 +1,8 @@
 node_modules/
 package-lock.json
+public/d3js_demo/__target__/
+public/transcrypt_demo/__target__/
+public/transcrypt_hello/hello/__target__/
+
+.wslrun
+
